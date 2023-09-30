@@ -1,0 +1,352 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .50px;
+
+}
+
+body {
+    background-repeat: no-repeat;
+    background-image: url(moon.avif);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    background: rgba(39, 39, 39, 0.4);
+}
+
+.nav {
+    backdrop-filter: blur(5px);
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    z-index: 100;
+    background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);
+}
+
+.nav-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo i {
+    font-weight: 600;
+    color: white;
+    font-size: 25px;
+    margin-right: 10%;
+}
+
+.nav-logo p {
+    font-weight: bolder;
+    color: white;
+    font-size: 25px;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu ul {
+    display: flex;
+}
+
+.nav-menu ul li {
+    list-style-type: none;
+}
+
+.nav-menu ul li .link {
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+    margin: 0 25px;
+}
+
+.link:hover,
+.active {
+    border-bottom: 2px solid white;
+}
+
+.nav-button .btn {
+    width: 130px;
+    height: 40px;
+    font-weight: 900;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+#Sign-btn {
+    margin-left: 15px;
+}
+
+.btn .white-btn {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+.btn .white-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.nav-menu-btn {
+    display: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* nav */
+.main {
+    height: 100vh;
+
+}
+
+.main-contain {
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    top: 8.5rem;
+    color: white;
+    height: 20rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    text-align: center;
+    gap: 5rem;
+    backdrop-filter: blur(3px);
+    border: 2px solid rgba(255, 255, 255, 0.182);
+    border-radius: 1rem;
+    line-height: 1.45rem;
+    
+}
+
+
+.main-contain:hover{
+    color: white;
+    transform: scale(1.01);
+    backdrop-filter: blur(7px);
+    box-shadow: 0px 0px 2px white;
+}
+.main-contain p {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.723);
+}
+
+.main-contain h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 2rem;
+}
+
+/* about quot */
+
+
+
+.card-contain {
+    height: 150vh;
+    display: flex;
+    gap: 19px;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.882);
+
+}
+
+.card {
+    height: 30%;
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.182);
+    border-radius: 1rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.card:hover{
+    transform: scale(1.01);
+    backdrop-filter: blur(7px);
+}
+.card-img {
+    height: 90%;
+    width: 130%;
+    border-radius: 1rem;
+    margin-left: 10px;
+}
+
+.c1 {
+    background-image: url(card1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.c2 {
+    background-image: url(card1.1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.c3 {
+    background-image: url(card3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.card-text {
+    height: 80%;
+    font-family: 'League Spartan', sans-serif;
+    line-height: 1.45rem;
+    padding: .8rem;
+}
+
+.card1 .card-text h1{
+    text-align: end; 
+}
+.card1 .card-text p{
+    text-align: end; 
+}
+.card-text h1 {
+    text-align: start;
+    font-size: 2.5rem;
+}
+
+.card-text p {
+    margin-top: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: .95rem;
+    text-align: start;
+}
+
+.card-text p:hover {
+    color: rgba(255, 255, 255, 0.789);
+    font-weight: 600;
+}
+
+/* card */
+
+.contain{
+    color: white;
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 15vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items:center ;
+    backdrop-filter: blur(3px);
+    border: 2px solid rgba(255, 255, 255, 0.548);
+    border-radius: 1rem;
+    padding: 20px;
+    
+}
+.faq{
+    width: 100%;
+}
+.a{
+    background-color: rgba(255, 255, 255, 0.648);
+    height: 2rem;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.719);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 5%;
+    color: black;
+    font-weight: 600;
+    transition: .3s  ;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+.a i{
+    font-size: 15px;
+}
+.active,
+.a:hover{
+    background-color: rgba(0, 0, 0, 0.39);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 1rem;
+}
+.contain1{
+    overflow: hidden;
+    display: none;
+    padding: 1.02rem;
+    font-weight: 400;
+}
+.a{
+    backdrop-filter: blur(5px);
+}
+.faq .active{
+    background-color: transparent;
+    color:white;
+}
+/* question */
+
+.footer {
+    background-color: black;
+    height: 20vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.fa-instagram:hover{
+    color: rgb(253, 108, 5);
+}
+.fa-facebook:hover{
+    color: rgb(0, 81, 255);
+}
+.fa-twitter:hover{
+    color: rgb(21, 181, 234);
+}
+.fa-linkedin:hover{
+    color: rgb(25, 0, 255);
+}
+.fa-youtube:hover{
+    color: rgba(238, 23, 23, 0.958);
+}
+.fa-brands:hover{
+    font-size: 1.5rem;
+    transition: .2s;
+}
+/* footer */
